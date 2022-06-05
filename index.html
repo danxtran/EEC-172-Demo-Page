@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        background-color:#0D1117;
+        color:#ffffff;
+        text-align: center;
+        margin: auto;
+      }
+      body {
+        background-repeat:no-repeat; 
+        background-position:top left; 
+        background-attachment:fixed;
+        margin: 150px;
+      }
+      a {
+        color:#87B4F8;
+      }
+      h1 {
+        font-family:Arial, sans-serif;
+        font-size:60px;
+      }
+      h2 {
+        font-family:Arial, sans-serif;
+        font-size:40px;
+      }
+      p.p1 {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-family:Georgia, serif;
+        font-size:25px;
+      }
+      iframe {
+        display: block; 
+        order-style:none;
+      }
+      iframe.video {
+        width:640px;
+        height:390px;
+        border: 0px;
+      }
+      img {
+        width: 640px;
+        height: auto;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <title>ECS 172 Demo UC Davis Spring 2022</title>
+    <h1>Dictionary And Wordle Demo</h1>
+    <h2>Dan Tran, Timothy Nishiwaki</h2>
+    <h2>EEC 172 UC Davis Spring 2022</h2>
+    <p class="p1">Project Summary:</p>
+    <p>We implemented a dictionary definition search tool and Wordle game on the CC3200 board.<br>
+      Word definitions are found using a free dictionary API at <a href="https://dictionaryapi.dev/">https://dictionaryapi.dev/</a>.<br>
+      Multi-tap texting and controls are executed on a TV remote and received through an IR sensor.<br>
+      The UI is displayed on an OLED screen through SPI.<br>
+      <br>
+      The original wordle game can be found <a href="https://www.nytimes.com/games/wordle/index.html">here</a>.<br>
+      Wordle instructions are as follows (but with 5 guesses on our version):</p>
+    <img src="./Assets/wordle_instructions.png"></img>
+    <p class="p1">Video Demo:</p>
+    <iframe class="video" src="https://www.youtube.com/embed/i8P4DgsoVsU" allowfullscreen></iframe>
+    <p class="p1">Definitions Email:</p>
+    <img src="./Assets/Emails/def_w.png"></img>
+    <p class="p1">No Definitions Email:</p>
+    <img src="./Assets/Emails/no_def.png"></img>
+    <p class="p1">Wordle Win Email:</p>
+    <img src="./Assets/Emails/wordle_win.png"></img>
+    <p class="p1">Wordle Lose Email:</p>
+    <img src="./Assets/Emails/wordle_lose.png"></img>
+  </body>
+  
+</html>
